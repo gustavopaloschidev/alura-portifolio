@@ -1,0 +1,185 @@
+/* CSS para toda a página */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variáveis de CSS */
+:root{
+    --cor-primária: #000;
+    --cor-seccundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+}
+
+/* CSS por seções */
+body{
+    background-color: var(--cor-primária);
+    color: var(--cor-seccundaria);
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-seccundaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+}
+
+.apresentacao__conteudo__botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+}
+
+.apresentacao__conteudo__botoes a{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 16px;
+    padding: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-primária);
+    font-weight: 600;
+    background-color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__botoes a:hover{
+    background-color: #f6f6f6;
+}
+
+.apresentacao__conteudo__botoes h2{
+    font-size: 1.25rem;
+
+}
+
+.apresentacao__conteudo__botoes img{
+    width: 25px;
+    height: auto;
+}
+
+.apresentacao__foto{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.apresentacao__foto:hover{
+    border: 2px solid var(--cor-terciaria);
+    
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primária);
+    text-align: center;
+    padding: 20px;
+}
+
+.curriculo{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 15%;
+}
+
+.curriculo__titulo{
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+}
+
+.curriculo__empresa{
+    margin-bottom: 15px;
+}
+
+.curriculo__empresa__cargo{
+    margin-bottom: 15px;
+    
+}
+
+.curriculo__empresa_cargo__descricao{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.curriculo__empresa_cargo__descricao__lista{
+    margin-bottom: 30px;
+    max-width: 900px;
+    text-shadow: #f6f6f6;
+}
+
+.curriculo__empresa_cargo__descricao__lista li{
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 5% 10%
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+        
+    }
+
+    .apresentacao__foto{
+        width: 80%;
+        border-radius: 20px;
+    }
+}
